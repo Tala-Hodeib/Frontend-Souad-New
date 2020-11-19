@@ -5,8 +5,9 @@
 .cards {
   padding: 4rem;
   /* background: url('../images/skills.jpg') center center/cover no-repeat; */
-  background: #932432;
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+  /* background: #932432; */
+  background: #fff;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
   height: 100%;
   object-fit: contain;
 }
@@ -88,6 +89,7 @@
   content: attr(data-category);
   position: absolute;
   bottom: 0;
+  left: 30%;
   margin-left: 10px;
   padding: 6px 8px;
   max-width: calc((100%) - 60px);
@@ -144,7 +146,8 @@
   }
 
   .cards--container {
-    max-width: 40%;
+    max-width: 100%;
+    margin: 0;
   }
 
   .cards--item {
@@ -157,11 +160,20 @@
   }
 
   .cards--items {
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     text-align: center;
   }
 
-  .cards--item--pic-wrap {
+  .cards--item--img {
+    width: 100%;
+    height: 100%;
+  }
+  .cards--item--info,
+  .cards--item--text {
     display: none;
+  }
+  .cards--item--pic-wrap::after{
+    position: relative;
   }
 }

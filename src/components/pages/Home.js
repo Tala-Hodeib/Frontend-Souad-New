@@ -7,6 +7,7 @@ import HeroSection from '../HeroSection';
 import Experience from '../Experience'
 import About from '../About';
 import ContactSection from '../ContactSection'
+import Clients from '../Clients'
 
 function Home() {
     return (
@@ -14,6 +15,7 @@ function Home() {
             <HeroSection />
             <About />
             <Cards />
+            <Clients />
             <Projects />
             <Experience />
             <ContactSection />

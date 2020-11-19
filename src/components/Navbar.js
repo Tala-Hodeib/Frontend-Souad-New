@@ -15,15 +15,15 @@ function Navbar() {
         scroll.scrollToTop();
     };
 
-    const showButton = () =>{
-        if(window.innerWidth <= 960){
+    const showButton = () => {
+        if (window.innerWidth <= 960) {
             setButton(false)
-        }else{
+        } else {
             setButton(true)
         }
     }
 
-    useEffect(() =>{
+    useEffect(() => {
         showButton()
     }, [])
 
@@ -31,35 +31,38 @@ function Navbar() {
     return (
         <nav className="navbar">
             <div className="navbar-container">
-                <Link to="/" className="navbar-logo" onClick={ scrollToTop }>
+                <Link to="/" className="navbar-logo" onClick={scrollToTop}>
                     Logo <i className="fab fa-typo3" />
                 </Link>
                 <div className="menu-icon" onClick={handleClick}>
-                    <i className={ click ? 'fas fa-times' : 'fas fa-bars' } />
+                    <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
                 </div>
-                <ul className={ click ? 'nav-menu active' : 'nav-menu' }>
+                <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                     <li className='nav-item'>
-                        <Link to="Home" spy={true} smooth={true} offset={-70} duration={700} className='nav-links' onClick={ closeMobileMenu }>Home</Link>
+                        <Link to="Home" spy={true} smooth={true} offset={-70} duration={700} className='nav-links' onClick={closeMobileMenu}>Home</Link>
                     </li>
                     <li className='nav-item'>
-                        <Link to="About" spy={true} smooth={true} offset={-70} duration={700} className='nav-links' onClick={ closeMobileMenu }>About</Link>
+                        <Link to="About" spy={true} smooth={true} offset={-70} duration={700} className='nav-links' onClick={closeMobileMenu}>About</Link>
                     </li>
                     <li className='nav-item'>
-                        <Link to="Skills" spy={true} smooth={true} offset={-70} duration={700} className='nav-links' onClick={ closeMobileMenu }>Skills</Link>
+                        <Link to="Skills" spy={true} smooth={true} offset={-70} duration={700} className='nav-links' onClick={closeMobileMenu}>Skills</Link>
                     </li>
                     <li className='nav-item'>
-                        <Link to="Projects" spy={true} smooth={true} offset={-70} duration={700} className='nav-links' onClick={ closeMobileMenu }>Projects</Link>
+                        <Link to="Clients" spy={true} smooth={true} offset={-70} duration={700} className='nav-links' onClick={closeMobileMenu}>Clients</Link>
                     </li>
                     <li className='nav-item'>
-                        <Link to="Experience" spy={true} smooth={true} offset={-70} duration={700} className='nav-links' onClick={ closeMobileMenu }>Experience</Link>
+                        <Link to="Projects" spy={true} smooth={true} offset={-70} duration={700} className='nav-links' onClick={closeMobileMenu}>Projects</Link>
                     </li>
                     <li className='nav-item'>
-                        <Link to="Contact" spy={true} smooth={true} offset={-70} duration={700} className='nav-links' onClick={ closeMobileMenu }>Let's Talk</Link>
+                        <Link to="Experience" spy={true} smooth={true} offset={-70} duration={700} className='nav-links' onClick={closeMobileMenu}>Experience</Link>
+                    </li>
+                    <li className='nav-item'>
+                        <Link to="Contact" spy={true} smooth={true} offset={-70} duration={700} className='nav-links' onClick={closeMobileMenu}>Let's Talk</Link>
                     </li>
                 </ul>
                 {/* {button && <Button buttonStyle='btn--outline'>Contact Me</Button>} */}
             </div>
-        </nav>  
+        </nav>
     )
 }
 

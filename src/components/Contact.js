@@ -25,17 +25,20 @@ function Contact() {
                 <i class="fas fa-phone"><label for="call_me" id="call_me">  Call me</label><label for="phone" id="phone">  00000000</label></i>
             </div>
             <div className="form-element">
-                <form onSubmit={sendEmail}>
+                <form autocomplete="off" onSubmit={sendEmail}>
                     <div className="fields">
                         <div className="field">
-                            <input type="text" name="name" id="name" placeholder="Your Name" className="footer-input" required />
+                            <label for="name" id="name">Name</label>
+                            <input type="text" name="name" id="name" className="footer-input" required />
                         </div>
                         <div className="field">
-                            <input type="text" name="email" id="email" placeholder="Your email" className="footer-input" required />
+                            <label for="email" id="email">Email</label>
+                            <input type="text" name="email" id="email" className="footer-input" required />
                         </div>
                         <div className="messages">
                             <div className="field">
-                                <textarea className="footer-input" name="message" id="message" placeholder="Your message" rows="7" cols="50" required></textarea>
+                                <label for="Message" id="Message">Message</label>
+                                <textarea className="footer-input" name="message" id="message" rows="7" cols="50" required></textarea>
                             </div>
                             <input type="submit" className="btn-inner" value="Send Message"></input>
                         </div>

@@ -65,10 +65,10 @@ ul{
 
 .main-wrapper {
    box-sizing: border-box;
-   height: 100vh;
-   padding: 4rem;
-   background: #932432;
-    box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
+   height: 90vh;
+   padding: 0 4rem;
+   background: #fff;
+   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
 }
 
 h1 {
@@ -88,10 +88,9 @@ h1 {
 
 
    margin: 0;
-   margin-top: 70px;
    display: grid;
    place-items: center;
-   padding: 1rem;
+   padding: 3rem;
    font-family: 'Source Code Pro', monospace;
 
    text-rendering: optimizelegibility;
@@ -100,8 +99,9 @@ h1 {
 }
 
 .card {
-   width: calc(var(--card-size) * 3);
-   height: 60vh;
+   width: calc(var(--card-size) * 2.5);
+   height: 40vh;
+   overflow: scroll;
 
 
    /* border-radius: 0.75rem; */

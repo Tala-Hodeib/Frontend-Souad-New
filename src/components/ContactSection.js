@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import Modal from 'react-modal'
 import { Button } from './Button';
 import './Button.css';
-import './Footer.css';
 import { animateScroll as scroll } from "react-scroll";
 import Contact from './Contact';
 import './ContactSection.css';
@@ -15,6 +14,11 @@ function Footer() {
   const [modalIsOpen, setModalIsOpen] = useState(false)
   return (
     <div className="contact-section-container" id="Contact">
+      <section className="footer-contact">
+        <p className="footer-contact-heading">
+          Let's Make Something Great Together
+        </p>
+      </section>
       <Button onClick={() => setModalIsOpen(true)} className="btn-inner" buttonStyle='btn--outline' buttonSize='btn--large' >Send me an Email</Button>
       <Modal isOpen={modalIsOpen} shouldCloseOnOverlayClick onRequestClose={() => setModalIsOpen(false)}
         style={{
@@ -24,7 +28,7 @@ function Footer() {
             left: 0,
             right: 0,
             bottom: 0,
-            backgroundColor: '#932432',
+            backgroundColor: '#fff',
             boxShadow: 'inset 0 0 0 1000px rgba(0, 0, 0, 0.2)'
           },
           content: {
@@ -32,10 +36,10 @@ function Footer() {
             top: '55%',
             left: '50%',
             width: '70%',
-            height: '70%',
+            height: '80%',
             transform: 'translate(-50%, -50%)',
             border: '1px solid #ccc',
-            background: '#932432',
+            background: '#007CC7',
             color: '#fff',
             overflow: 'auto',
             WebkitOverflowScrolling: 'touch',
@@ -46,11 +50,9 @@ function Footer() {
         }}>
         <Contact />
       </Modal>
-      <section className="footer-contact">
-        <p className="footer-contact-heading">
-          Let's Make Something Great Together
-                </p>
-      </section>
+      <p className="footer-contact-heading">
+        Or Find Me On One of My Channels
+        </p>
       <div className="footer-links">
         <div className="footer-link-wrapper">
           <div className="footer-link-items">
