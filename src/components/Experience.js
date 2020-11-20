@@ -8,7 +8,12 @@ function slider() {
         <div className="main-wrapper">
             <h1 id="Experience">My Experience</h1>
             <div className="exp-slider">
-                <Carousel >
+                <Carousel
+                    verticalMode
+                    easing="cubic-bezier(0.110,1,1.000,0.210)"
+                    tiltEasing="cubic-bezier(1,0.15,0.55,1.54)"
+                    transitionMs={500}
+                >
                     <div className="card">
                         <div className="card-avatar">
                             <img src="images/l1.jpeg" alt="company logo"></img>
@@ -93,80 +98,3 @@ function slider() {
     )
 }
 export default slider
-
-
-
-
-{/* <CarouselTest />  */ }
-{/* <Item>
-                    <div className="Exp-Card">
-                        <div className="exp-items">
-                            <div className="exp-role">QA</div>
-                            <div className="exp-company">Nymgo</div>
-                            <div className="exp-duration">1990 - 2020</div>
-                            <div className="exp-tasks">
-                                <ul>
-                                    <li>Lorem Ipsum has been the industry's</li> 
-                                    <li>Lorem Ipsum has been the industry's</li>
-                                    <li>Lorem Ipsum has been the industry's</li>
-                                    <li>Lorem Ipsum has been the industry's</li>
-                                    <li>Lorem Ipsum has been the industry's</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </Item>
-                <Item>
-                    <div className="Exp-Card">
-                        <div className="exp-items">
-                            <div className="exp-role">QA</div>
-                            <div className="exp-company">Nymgo</div>
-                            <div className="exp-duration">1990 - 2020</div>
-                            <div className="exp-tasks">
-                                <ul>
-                                    <li>Lorem Ipsum has been the industry's</li> 
-                                    <li>Lorem Ipsum has been the industry's</li>
-                                    <li>Lorem Ipsum has been the industry's</li>
-                                    <li>Lorem Ipsum has been the industry's</li>
-                                    <li>Lorem Ipsum has been the industry's</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </Item>
-                <Item>
-                    <div className="Exp-Card">
-                        <div className="exp-items">
-                            <div className="exp-role">QA</div>
-                            <div className="exp-company">Nymgo</div>
-                            <div className="exp-duration">1990 - 2020</div>
-                            <div className="exp-tasks">
-                                <ul>
-                                    <li>Lorem Ipsum has been the industry's</li> 
-                                    <li>Lorem Ipsum has been the industry's</li>
-                                    <li>Lorem Ipsum has been the industry's</li>
-                                    <li>Lorem Ipsum has been the industry's</li>
-                                    <li>Lorem Ipsum has been the industry's</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </Item>
-                <Item>
-                    <div className="Exp-Card">
-                        <div className="exp-items">
-                            <div className="exp-role">QA</div>
-                            <div className="exp-company">Nymgo</div>
-                            <div className="exp-duration">1990 - 2020</div>
-                            <div className="exp-tasks">
-                                <ul>
-                                    <li>Lorem Ipsum has been the industry's</li> 
-                                    <li>Lorem Ipsum has been the industry's</li>
-                                    <li>Lorem Ipsum has been the industry's</li>
-                                    <li>Lorem Ipsum has been the industry's</li>
-                                    <li>Lorem Ipsum has been the industry's</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </Item> */}

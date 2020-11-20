@@ -8,7 +8,7 @@ function Scroll3() {
     <Spring
       from={{ opacity: 0 }}
       to={{ opacity: 1 }}
-      config={{ delay: 1300, duration: 1300 }}
+      config={{ delay: 5000, duration: 1300 }}
     >
       { props => (
         <div style={props}>

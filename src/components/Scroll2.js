@@ -6,8 +6,8 @@ function Scroll2() {
   return (
     <Spring
       from={{ opacity: 0, marginTop: -600 }}
-      to={{ opacity: 1, marginTop: 0 }}
-      config={{ delay: 300, duration: 300 }}
+      to={{ opacity: 1, marginTop: -200 }}
+      config={{ delay: 4000, duration: 300 }}
     >
       { props => (
         <div style={props}>

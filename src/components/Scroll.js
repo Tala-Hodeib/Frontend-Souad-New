@@ -6,7 +6,7 @@ function Scroll() {
     <Spring
       from={{ opacity: 0, marginLeft: -600 }}
       to={{ opacity: 1, marginLeft: 0 }}
-      config={{ delay: 700, duration: 700 }}
+      config={{ delay: 4400, duration: 700 }}
     >
       { props => (
         <div style={props}>
