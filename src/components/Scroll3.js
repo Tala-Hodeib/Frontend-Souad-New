@@ -3,6 +3,7 @@ import { Link } from 'react-scroll';
 import { Spring } from 'react-spring/renderprops';
 import { Button } from './Button';
 import './Scroll3.css'
+
 function Scroll3() {
   return (
     <Spring
@@ -13,7 +14,6 @@ function Scroll3() {
       { props => (
         <div style={props}>
           <div>
-            {/* <Button className="btn" buttonStyle='btn--outline' buttonSize='btn--large'>Read More</Button> */}
             <Link to="About" spy={true} smooth={true} offset={-70} duration={700}>
               <button className="button">
                 Read More

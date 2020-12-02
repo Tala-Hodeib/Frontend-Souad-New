@@ -6,9 +6,11 @@ import Scroll2 from './Scroll2'
 import Scroll3 from './Scroll3'
 import '../components/HeroSection.css';
 import gsap from 'gsap'
+import { Link } from 'react-router-dom';
+
+
 
 const tl = gsap.timeline({ defaults: { ease: 'power1.out' } })
-
 
 function tween() {
     tl.to(".textt", { y: "0%", duration: 1, delay: 0.5, stagger: 0.25 });
@@ -28,10 +30,10 @@ function HeroSection() {
             <div className="intro">
                 <div className="intro-text">
                     <h2 className="hide">
-                        <span className="textt">Nice of you to</span>
+                        <span className="textt">Welcome</span>
                     </h2>
                     <h2 className="hide">
-                        <span className="textt">Drop in...</span>
+                        <span className="textt">---------</span>
                     </h2>
                     <h2 className="hide">
                         <span className="textt">Have a Look Around</span>

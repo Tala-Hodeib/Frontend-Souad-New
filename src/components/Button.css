@@ -19,9 +19,10 @@
     border: none;
     cursor: pointer;
     background: transparent;
-    color: #007CC7;
+    color: #242424;
     width: 20%;
     border: 1px solid #242424;
+    text-align: center;
 }
 
 .btn--primary {

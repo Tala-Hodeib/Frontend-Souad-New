@@ -7,15 +7,14 @@ import HeroSection from '../HeroSection';
 import Experience from '../Experience'
 import About from '../About';
 import ContactSection from '../ContactSection'
-import Clients from '../Clients'
+
 
 function Home() {
     return (
         <>
             <HeroSection />
-            <About />
             <Cards />
-            <Clients />
+            <About />
             <Projects />
             <Experience />
             <ContactSection />
@@ -23,4 +22,4 @@ function Home() {
         </>
     )
 }
-export default Home;
+export default Home

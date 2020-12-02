@@ -1,6 +1,5 @@
 import React from "react";
 import './Button.css';
-// import{ Link } from 'react-router-dom';
 import { Link } from 'react-scroll';
 
 const STYLES = ['btn--primary', 'btn--outline']

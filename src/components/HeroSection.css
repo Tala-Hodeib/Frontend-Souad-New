@@ -1,6 +1,4 @@
 .hero-container {
-    /* background: url('../images/test5.webp') center center/cover no-repeat; */
-    /* background: #932432; */
     background: #fff;
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
     height: 100vh;
@@ -38,7 +36,7 @@
 .intro{
     background: black;
     position: fixed;
-    top: 10%;
+    top: 8%;
     left: 0;
     width: 100%;
     height: 100%;
@@ -66,6 +64,7 @@
 .hide{
     background: black;
     overflow: hidden;
+    text-align: center;
 }
 
 .hide span{

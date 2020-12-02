@@ -4,8 +4,6 @@
 
 .cards {
   padding: 4rem;
-  /* background: url('../images/skills.jpg') center center/cover no-repeat; */
-  /* background: #932432; */
   background: #fff;
   box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
   height: 100%;
@@ -53,8 +51,7 @@
 .cards--item {
   width: 20%;
   margin: 0 1rem;
-  /* border-radius: 10px; */
-  background: #73b5df;
+  background: #b6d1e2;
   color: #fff;
   text-align: center;
 }
@@ -117,6 +114,7 @@
 
 .cards--item--info {
   padding: 15px;
+  min-height: 32vh;
 }
 
 .cards--item--text {

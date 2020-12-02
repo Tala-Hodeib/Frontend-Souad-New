@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
-// import { Button } from './Button';
 import './Navbar.css';
 import { animateScroll as scroll } from "react-scroll";
 
@@ -42,13 +41,10 @@ function Navbar() {
                         <Link to="Home" spy={true} smooth={true} offset={-70} duration={700} className='nav-links' onClick={closeMobileMenu}>Home</Link>
                     </li>
                     <li className='nav-item'>
-                        <Link to="About" spy={true} smooth={true} offset={-70} duration={700} className='nav-links' onClick={closeMobileMenu}>About</Link>
-                    </li>
-                    <li className='nav-item'>
                         <Link to="Skills" spy={true} smooth={true} offset={-70} duration={700} className='nav-links' onClick={closeMobileMenu}>Skills</Link>
                     </li>
                     <li className='nav-item'>
-                        <Link to="Clients" spy={true} smooth={true} offset={-70} duration={700} className='nav-links' onClick={closeMobileMenu}>Clients</Link>
+                        <Link to="About" spy={true} smooth={true} offset={-70} duration={700} className='nav-links' onClick={closeMobileMenu}>About</Link>
                     </li>
                     <li className='nav-item'>
                         <Link to="Projects" spy={true} smooth={true} offset={-70} duration={700} className='nav-links' onClick={closeMobileMenu}>Projects</Link>
@@ -60,7 +56,6 @@ function Navbar() {
                         <Link to="Contact" spy={true} smooth={true} offset={-70} duration={700} className='nav-links' onClick={closeMobileMenu}>Let's Talk</Link>
                     </li>
                 </ul>
-                {/* {button && <Button buttonStyle='btn--outline'>Contact Me</Button>} */}
             </div>
         </nav>
     )

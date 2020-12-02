@@ -6,19 +6,10 @@ import { animateScroll as scroll } from "react-scroll";
 import Contact from './Contact';
 import './ContactSection.css';
 
-const scrollToTop = () => {
-  scroll.scrollToTop();
-};
-
 function Footer() {
   const [modalIsOpen, setModalIsOpen] = useState(false)
   return (
     <div className="contact-section-container" id="Contact">
-      <section className="footer-contact">
-        <p className="footer-contact-heading">
-          Let's Make Something Great Together
-        </p>
-      </section>
       <Button onClick={() => setModalIsOpen(true)} className="btn-inner" buttonStyle='btn--outline' buttonSize='btn--large' >Send me an Email</Button>
       <Modal isOpen={modalIsOpen} shouldCloseOnOverlayClick onRequestClose={() => setModalIsOpen(false)}
         style={{
@@ -51,8 +42,10 @@ function Footer() {
         <Contact />
       </Modal>
       <p className="footer-contact-heading">
-        Or Find Me On One of My Channels
-        </p>
+        <i className="fas fa-caret-square-up"></i>
+        <span>Let's Make Something Great Together</span>
+        <i className="fas fa-caret-square-down"></i>
+      </p>
       <div className="footer-links">
         <div className="footer-link-wrapper">
           <div className="footer-link-items">

@@ -2,6 +2,10 @@ import React from 'react'
 import emailjs from 'emailjs-com'
 import './Button.css';
 import './Contact.css'
+import { toast } from 'react-toastify'
+import 'react-toastify/dist/ReactToastify.css'
+
+toast.configure()
 
 
 function sendEmail(e) {
@@ -17,15 +21,20 @@ function sendEmail(e) {
 }
 
 function Contact() {
+
+    const notify = () => {
+        toast.info('Thank You! I\'ll Reply Soon!', { position: toast.POSITION.TOP_CENTER, autoClose: 3000, hideProgressBar: true, closeOnClick: true })
+    }
+
     return (
         <div className="input-areas">
             <div className="hero-info">
-                <i class="fas fa-info-circle"><label for="name" id="name">  Souad Ali</label></i>
-                <i class="fas fa-envelope"><label for="email_us" id="email_us">  Email me</label><label for="email" id="email">  test@email.com</label></i>
-                <i class="fas fa-phone"><label for="call_me" id="call_me">  Call me</label><label for="phone" id="phone">  00000000</label></i>
+                <i className="fas fa-info-circle"><label for="name" id="name">  Souad Ali</label></i>
+                <i className="fas fa-envelope"><label for="email_us" id="email_us">  Email me</label><label for="email" id="email">  test@email.com</label></i>
+                <i className="fas fa-phone"><label for="call_me" id="call_me">  Call me</label><label for="phone" id="phone">  00000000</label></i>
             </div>
             <div className="form-element">
-                <form autocomplete="off" onSubmit={sendEmail}>
+                <form name="contactForm" autocomplete="off" onSubmit={sendEmail}>
                     <div className="fields">
                         <div className="field">
                             <label for="name" id="name">Name</label>
@@ -33,16 +42,15 @@ function Contact() {
                         </div>
                         <div className="field">
                             <label for="email" id="email">Email</label>
-                            <input type="text" name="email" id="email" className="footer-input" required />
+                            <input type="email" name="email" id="email" className="footer-input" required />
                         </div>
                         <div className="messages">
                             <div className="field">
                                 <label for="Message" id="Message">Message</label>
                                 <textarea className="footer-input" name="message" id="message" rows="7" cols="50" required></textarea>
                             </div>
-                            <input type="submit" className="btn-inner" value="Send Message"></input>
+                            <button onClick={notify} className="btn-inner" value="Send Message">Send</button>
                         </div>
-                        {/* <Button buttonStyle='btn--outline'>Send Me an Email</Button> */}
                     </div>
                 </form>
             </div>

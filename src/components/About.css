@@ -4,8 +4,6 @@
     align-items: center;
     height: 60vh;
     text-align: right;
-    /* background: url('../images/hero.jpeg') center center/cover no-repeat; */
-    /* background: #932432; */
     background: #fff;
     box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.2);
 }
@@ -21,7 +19,7 @@
 
 .About-Section p {
     width: 50vw;
-    color: #007CC7;
+    color: #04293f;
     text-align: center;
     font-family: 'Architects Daughter';
     font-weight: bold;
@@ -46,7 +44,6 @@
     }
 
     .About-Text {
-        /* text-align: center; */
         width: 90%;
     }
 
@@ -65,7 +62,6 @@
 
 @media screen and (max-width: 1280px) {
     .About-Section p {
-        /* padding: 0; */
         width: 80vw;
     }
 }

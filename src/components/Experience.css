@@ -39,7 +39,7 @@ h1 {
    overflow: scroll;
 
 
-   /* border-radius: 0.75rem; */
+  
    box-shadow: 0 2px 70px 4px rgba(0, 0, 0, 0.56), 0 0 0 1px rgba(0, 0, 0, 0.3);
 
    background: #eeeedd;
@@ -64,16 +64,21 @@ h1 {
 
 .card-details {
    padding: 1rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
 }
 
 .name {
    color: var(--secondary);
-   font-size: 1.25rem;
+   font-size: 1.8rem;
 }
 
 .occupation {
    font-weight: 600;
    color: var(--primary);
+   font-size: 1.2rem;
 }
 
 .occupation::before {
@@ -104,12 +109,12 @@ img {
    justify-content: space-between;
    margin-bottom: 0.5rem;
    margin-right: 1rem;
-   width: 6vw;
+   width: 8vw;
 }
 
 .value {
    color: var(--primary);
-   font-size: 13px;
+   font-size: 16px;
 }
 
 .item.value {
@@ -118,6 +123,10 @@ img {
 
 .item .value {
    color: var(--secondary);
+}
+
+span.value{
+   height: 2vh;
 }
 
 .item .label {
@@ -173,5 +182,11 @@ img {
    .card {
       width: 400px;
       margin: 0;
+   }
+}
+
+@media screen and (max-width: 660px) {
+   .skills{
+      display: none;
    }
 }
